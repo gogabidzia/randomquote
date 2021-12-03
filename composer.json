@@ -1,0 +1,21 @@
+{
+    "name": "gogabidzia/randomquote",
+    "authors": [
+        {
+            "name": "Giorgi Tsirekidze",
+            "email": "gtsirekidze97@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gogabidzia\\RandomQuote\\": "src/"
+        },
+        "files": [
+            "functions/functions.php"
+        ]
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "intervention/image": "^2.7"
+    }
+}

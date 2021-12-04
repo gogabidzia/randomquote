@@ -12,7 +12,7 @@ $routes = [
         'action'     => 'image',
     ],
 ];
-$path   = $_SERVER['REQUEST_URI'];
+$path   = strtok($_SERVER["REQUEST_URI"], '?');
 if (isset($routes[$path])) {
     $c      = new $routes[$path]['controller']();
     $action = $routes[$path]['action'];

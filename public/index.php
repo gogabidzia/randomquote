@@ -1,6 +1,7 @@
 <?php
 require_once '../vendor/autoload.php';
 define(BASE_PATH, dirname(__DIR__));
+ini_set("display_errors", 1);
 $routes = [
     '/'      => [
         'controller' => \Gogabidzia\RandomQuote\Controllers\GeneratorController::class,

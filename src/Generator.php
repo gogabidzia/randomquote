@@ -18,11 +18,11 @@ class Generator {
     }
 
     public function saveAs ($path) {
-        $image = $this->generate($path);
+        $image = $this->generate();
         $image->save($path);
     }
 
-    public function generate ($path) {
+    public function generate () {
         $quote = $this->getRandomQuote();
         $photo = $this->getRandomPhoto();
         $name  = $this->getRandomName();
